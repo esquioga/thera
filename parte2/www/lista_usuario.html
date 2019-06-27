@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Lista de Usarios</title>
+	<meta charset="utf-8">
+	<meta name="author" content="João Esquioga">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin="anonymous"></script>
+  	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="container MA-LISTA-DE-USURIOS">
+		<header class="background-header row align-items-center">
+			<div class="col-1"><img src="img/symbol.png" srcset="img/symbol@2x.png 2x. img/symbol@3x.png 3x" class="symbol rounded float-left"/></div>
+				
+			
+			<div class="divisor"></div>
+			<div class="col-2">
+				<div class="btn-group" role="group" aria-label="Basic example">
+			  		<button type="button" class="btn btn-secondary background-btn"><span class="oi oi-shield"></span></button>
+				  	<button type="button" class="btn btn-secondary background-slct"><span class="oi oi-person"></span></button>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="input-group" id="search-bar">
+					<input type="text" class="form-control" />
+					<div class="input-group-append">
+						<span class="oi oi-magnifying-glass glyph-fix"></span>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<content>
+			<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <th scope="col"></th>
+			      <th scope="col">USUARIO</th>
+			      <th scope="col">EMAIL</th>
+			      <th scope="col">DATA DE INCLUSAO</th>
+			      <th scope="col">DATA DE ALTERACAO</th>
+			      <th scope="col">REGRAS</th>
+			      <th scope="col">STATUS</th>
+			      <th scope="col">ACOES</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row"><input class="form-check-input" type="checkbox" value=""</th>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			      <td>@mdo</td>
+			    </tr>
+			    <tr>
+			      <th scope="row"><input class="form-check-input" type="checkbox" value=""</th>
+			      <td>Jacob</td>
+			      <td>Thornton</td>
+			      <td>@fat</td>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			      <td>@mdo</td>
+			    </tr>
+			    <tr>
+			      <th scope="row"><input class="form-check-input" type="checkbox" value=""</th>
+			      <td>Larry</td>
+			      <td>the Bird</td>
+			      <td>@twitter</td>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			      <td>@mdo</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</content>
+		
+	</div>
+	
+</body>
+</html>
