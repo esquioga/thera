@@ -26,13 +26,8 @@
                 <button type="button" class="btn btn-secondary background-btn"><span class="oi oi-shield"></span></button>
                 <button type="button" class="btn btn-secondary background-slct"><span class="oi oi-person"></span></button>
             </div>
-            <div class="col-lg-2 col-md-4 col-10">
-                <div class="input-group" id="search-bar">
-                    <input type="text" class="form-control" placeholder="Pesquisar..." />
-                    <div class="input-group-append">
-                        <span class="oi oi-magnifying-glass"></span>
-                    </div>
-                </div>
+            <div class="col-lg-2 col-md-4 col-10" id="searchBarRoot">
+                
             </div>
             <div class="col-lg-5 d-md-none d-lg-block"></div>
             <button type="button" class="btn btn-secondary background-btn hide-small"><span class="oi oi-menu"></span></button>
@@ -62,20 +57,19 @@
     
     <footer class="container-fluid">
         <div class="row align-items-center">
-            <span class="oi oi-target"></span>
+            <span class="oi oi-target "></span>
             <div class="orange">NO AR</div>
-            <div class="col-1"></div>
-            <span class="oi oi-monitor"></span>
+            <span class="oi oi-monitor ml-3"></span>
             <div>ENCONTRO - 10:00</div>
-            <div class="col-1"></div>
-            <span class="oi oi-reload"></span>
-            <div>Ultima atualizacao em 10:28</div>
-            <div class="col-4"></div>
-            <div>data/hora</div>
+            <span class="oi oi-reload d-none d-sm-none d-md-none d-lg-block ml-3"></span>
+            <div class=" d-none d-sm-none d-md-none d-lg-block">Ultima atualizacao em 10:28</div>
+            <div id='clock' class="offset-1 offset-lg-4"></div>
         </div>
     </footer>
 </body>
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script type="text/babel" src="lista_usuario.js"></script>
+<script type="text/babel" src="clock.js"></script>
+
 
 </html>
