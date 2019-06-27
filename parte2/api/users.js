@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var UsersMock = function() {};
 
-UsersMock.prototype.data = JSON.parse(fs.readFileSync('users_final.json').toString());
+UsersMock.prototype.data = JSON.parse(fs.readFileSync('users_final.json').toString()).slice(0, 5);
 
 UsersMock.prototype.getAll = function() {
     return this.data;
