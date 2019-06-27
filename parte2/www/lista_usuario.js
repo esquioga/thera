@@ -25,7 +25,7 @@ class UserList extends React.Component {
 
 	render() {
 		return (
-			<table class="table table-striped">
+			<table className="table table-striped">
 			  <thead>
 			    <tr>
 			      <th scope="col"></th>
@@ -42,14 +42,14 @@ class UserList extends React.Component {
 			this.state.users.map( user => {
 				return(
 					<tr id={user.id}>
-			      		<th scope="row"><input class="form-check-input" type="checkbox" value=""/></th>
+			      		<th scope="row"><input className="form-check-input" type="checkbox" value=""/></th>
 			      		<td>{user.name.first}</td>
 			      		<td>{user.email}</td>
 			      		<td>{user.registered.date}</td>
 			      		<td>{user.lastUpdate}</td>
 			      		<td>02</td>
 			      		<td>ATIVO</td>
-			      		<td><span class="oi oi-ellipses"></span></td>
+			      		<td><span className="oi oi-ellipses"></span></td>
 			    	</tr>
 				);
 			})
