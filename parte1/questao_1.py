@@ -1,16 +1,19 @@
 def getSumIndex(input, target):
-	for i in range(len(input) - 1):
-		for j in range(i + 1, len(input)):
-			if input[i] + input[j] == target:
-				return [i, j]
+
+	Diferences = {i:target - i for i in input}
+
+	for i in range(len(input)):
+		dif = Diferences.get(input[i]);
+		if dif in input and i != input.index(dif):
+			return [i, input.index(dif)]
 
 	return 'Não encontrado'
 
 
 if __name__ == '__main__':
-	test = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	test = list(range(0, 10000))
 
-	targets = [5, 6, 2, 8, 15, 16]
+	targets = [5, 6, 2, 8, 15, 16, 13000]
 
 
 	for target in targets:
